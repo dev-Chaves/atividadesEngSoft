@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Da Forca</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- FONTE -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONTE -->
+</head>
+<body>
+    
+    
+
+    <div class="container">
+
+        <h1>
+            Jogo Da Forca
+        </h1>
+
+        <div class="info">
+            <p>
+                Digite a Palavra Secreta:
+            </p>
+            <input type="text" placeholder="Digite a Palavra Secreta aqui !!!" id="insertInfo">
+            <button id="btnAdd"> Defina a Palavra</button>
+        </div>
+
+        <div class="info">
+            <p>
+                Digite a letra se ela está na palavra secreta
+            </p>
+
+            <input type="text" id="testInfo" placeholder="Digite a Letra aqui !!!">
+            <button id="btnTest"> Adivinhar </button>
+
+        </div>
+
+        <div class="info">
+            <p>Palavra: <span id="palavraDisplay"></span></p>
+            <p>Letras Erradas: <span id="letrasErradas"></span></p>
+            <p>Tentativas Restantes: <span id="tentativasRestantes">6</span></p>
+        </div>
+            
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
