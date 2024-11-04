@@ -17,7 +17,16 @@
 </head>
 <body>
     
-    <h1> Ordernação JS </h1>
+    <h1> Ordernação de Dados </h1>
+    <button id="btnIncluir" class="btnIncluir"> Incluir </button>
+
+    <div id="containerFiltrar">
+        <h4>
+            Entre com item a ser filtrado
+        </h4>
+        <input type="text" id="inpFiltrarNome" placeholder="Filtrar">
+        <button id="btnFiltrar" class="btn"> Filtrar </button>
+    </div>
 
     <div class="container" id="containerTabela">
         <table id="table">
@@ -26,10 +35,42 @@
                 <th id="btnName"> Nome</th>
                 <th id="btnDep">Departamento</th>
                 <th id="btnFuncao">Função</th>
-                <th id="btNSalario">Salário</th>
+                <th id="btnSalario">Salário</th>
+                <th id="editores"> Editores</th>
             </tr>
         </table>
     </div>
+
+    <!-- Modal -->
+
+    <dialog id="modalProdutos">
+        <h3> Controle de Dados</h3>
+        <div id="containerModal">
+            <div id="containerLabel">
+                <p>Id:</p>
+                <p>Nome</p>
+                <p>Departamento</p>
+                <p>Função</p>
+                <p>Salário</p>
+            </div>
+
+            <div id="containerInput">
+                <input type="text" id="inputId">
+                <input type="text" id="inputName">
+                <input type="text" id="inputDep">
+                <input type="text" id="inputFuc">
+                <input type="text" id="inputSal">
+            </div>
+
+            <div class="buttons">
+                <button id="btnIncluirModal">Incluir</button>
+                <button id="btnAlterarModal">Alterar</button>
+                <button id="btnExcluirModal">Excluir</button>
+                <button id="btnFecharModal">Fechar</button>
+            </div>
+
+        </div>
+    </dialog>
 
     <!-- <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script> -->
     <script type="module" src="./src/script.js"></script>

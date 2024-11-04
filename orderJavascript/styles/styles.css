@@ -10,11 +10,85 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #ddd;                      
     padding: 8px;
     text-align: center;
+    transition: 0.5s ease;              
 }
 th{
     background-color: #f2f2f2;
     cursor: pointer;
 }
+
+img{
+    width: 30px;
+    cursor: pointer;
+}
+
+#containerFiltrar{
+    margin-bottom: 20px;
+    
+}
+
+th:hover{
+    background-color: rgb(70, 70, 70);
+    color: whitesmoke;
+}
+
+button{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 24px;
+    color: #ddd;
+    background-color: #707070;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #313131;
+    -webkit-box-shadow: 0px 10px 24px 6px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 10px 24px 6px rgba(0,0,0,0.2);
+box-shadow: 0px 10px 24px 6px rgba(0,0,0,0.2);
+}
+
+
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+  }
+  
+  
+  #modalProdutos{
+    height: 400px;
+    width: 530px;
+    border: none;
+    border-radius: .6rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  }
+  
+  #containerModal{
+    display: flex; 
+    text-align: left;
+    margin-left: 30px;
+  }
+  
+  #containerInput{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  
+  }
+  
+  #containerInput input{
+    margin: 4px;
+    margin-bottom: 14px;
+    width: 280px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
